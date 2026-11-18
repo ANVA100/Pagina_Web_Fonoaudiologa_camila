@@ -311,6 +311,14 @@ fieldset.field legend { margin-bottom: .5rem; }
 .footer__nav, .footer__contact { display: grid; gap: .5rem; align-content: start; }
 .footer a { color: var(--white); text-decoration: none; }
 .footer a:hover { text-decoration: underline; }
+/* Redes sociales */
+.social { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem; margin-top: 1.4rem; }
+.social a { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--lila-100); color: var(--lila-700); transition: transform .2s ease, background-color .2s ease, color .2s ease; }
+.social a:hover, .social a:focus-visible { transform: translateY(-3px); background: var(--lila-600); color: var(--white); text-decoration: none; }
+.social .i { width: 22px; height: 22px; }
+.social__label { flex-basis: 100%; font-weight: 800; color: var(--lila-700); }
+.social--light a { background: rgba(255, 255, 255, .1); color: var(--white); }
+.footer .social--light a:hover, .footer .social--light a:focus-visible { background: var(--white); color: #3A2C55; text-decoration: none; }
 .footer__bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding-top: 1.5rem; font-size: .85rem; }
 
 /* Botón flotante WhatsApp */
@@ -607,7 +615,7 @@ body { animation: pageIn .5s ease backwards; }
   .cta-band__box { grid-template-columns: 1fr; text-align: center; }
   .cta-band__actions { justify-content: center; }
   .values { grid-template-columns: 1fr; max-width: 34rem; margin-inline: auto; }
-  .about__actions { justify-content: center; }
+  .about__actions, .about__text .social { justify-content: center; }
   .agenda--page .crumbs { justify-content: center; }
   .agenda__info { text-align: center; }
   .contact-list { text-align: left; max-width: 26rem; margin-inline: auto; }
