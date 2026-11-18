@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agenda tu cita | María Camila Velasco · Fonoaudióloga Miofuncional</title>
+  <meta name="description" content="Agenda tu valoración de terapia miofuncional con María Camila Velasco. Llena el formulario y confirma tu cita por WhatsApp.">
+  <meta name="theme-color" content="#7B58B3">
+
+  <!-- Vista previa al compartir el enlace (WhatsApp, Facebook). Si cambia la dirección del sitio, actualizar og:url y og:image. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Agenda tu cita | María Camila Velasco · Fonoaudióloga Miofuncional">
+  <meta property="og:description" content="Agenda tu valoración de terapia miofuncional con María Camila Velasco. Llena el formulario y confirma tu cita por WhatsApp.">
+  <meta property="og:url" content="https://anva100.github.io/Pagina_Web_Fonoaudiologa_camila/agenda.html">
+  <meta property="og:image" content="https://anva100.github.io/Pagina_Web_Fonoaudiologa_camila/img/compartir.jpg">
+  <meta property="og:locale" content="es_CO">
+
+  <link rel="icon" href="img/logo-silueta.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ ENCABEZADO ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="Ir al inicio">
+        <img src="img/logo-animado.svg" alt="" class="brand__icon" width="54" height="54">
+        <span class="brand__text">
+          <span class="brand__name">María Camila Velasco</span>
+          <span class="brand__sub">Fonoaudióloga Miofuncional</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="terapia.html">La terapia</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="formacion.html">Formación</a>
+        <a href="preguntas.html">Preguntas</a>
+        <a href="ubicacion.html">Ubicación</a>
+        <a href="agenda.html" class="btn btn--primary btn--sm" aria-current="page">Agendar cita</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section agenda agenda--page">
+      <div class="container agenda__grid">
+        <div class="agenda__info reveal reveal--left">
+          <nav class="crumbs" aria-label="Ruta de navegación"><a href="index.html">Inicio</a><span aria-hidden="true">/</span><span aria-current="page">Agenda tu cita</span></nav>
+          <p class="eyebrow eyebrow--light">Agenda tu cita</p>
+          <h1>Da el primer paso hoy</h1>
+          <p>
+            Llena el formulario y se abrirá WhatsApp con tus datos listos para enviar.
+            Te respondo lo antes posible para confirmar el día y la hora.
+          </p>
+          <ul class="contact-list">
+            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/><path d="M9 8.6c0 3.4 2.9 6.4 6.4 6.4l1-1.4-1.9-1-1 .8a5.4 5.4 0 0 1-2.8-2.8l.8-1-1-1.9z"/></svg><a href="https://wa.me/573155441274" target="_blank" rel="noopener">315 544 1274</a></li>
+            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Consultorio 705 Norte, Centro Internacional de Especialistas (CIE). <a class="link-light" href="ubicacion.html">Ver mapa</a></span></li>
+            <li><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><span>Atención con cita previa</span></li>
+          </ul>
+        </div>
+
+        <form class="form reveal reveal--right" id="formCita" novalidate>
+          <div class="form__row">
+            <label class="field">
+              <span>Tu nombre completo *</span>
+              <input type="text" name="nombre" autocomplete="name" required>
+            </label>
+            <label class="field">
+              <span>Celular *</span>
+              <input type="tel" name="celular" autocomplete="tel" inputmode="tel" placeholder="300 123 4567" required>
+            </label>
+          </div>
+
+          <fieldset class="field">
+            <legend>¿Para quién es la cita? *</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="para" value="Para mí" checked><span>Para mí</span></label>
+              <label class="chip"><input type="radio" name="para" value="Para mi hijo(a)"><span>Para mi hijo(a)</span></label>
+              <label class="chip"><input type="radio" name="para" value="Para otro familiar"><span>Otro familiar</span></label>
+            </div>
+          </fieldset>
+
+          <div class="form__row">
+            <label class="field" id="campoPaciente" hidden>
+              <span>Nombre del paciente *</span>
+              <input type="text" name="paciente">
+            </label>
+            <label class="field">
+              <span>Edad del paciente *</span>
+              <input type="text" name="edad" placeholder="Ej: 6 años, 8 meses" required>
+            </label>
+          </div>
+
+          <label class="field">
+            <span>Motivo de consulta *</span>
+            <select name="motivo" required>
+              <option value="">Selecciona una opción</option>
+              <option>Valoración general</option>
+              <option>Respiración oral o ronquido</option>
+              <option>Deglución atípica o hábitos (chupo, dedo, tetero)</option>
+              <option>Frenillo lingual o lactancia</option>
+              <option>Remisión de ortodoncia u odontología</option>
+              <option>Pronunciación y habla</option>
+              <option>Dolor o ruidos en la mandíbula (ATM)</option>
+              <option>Parálisis facial</option>
+              <option>Otro</option>
+            </select>
+          </label>
+
+          <fieldset class="field">
+            <legend>Horario preferido</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="horario" value="Mañana"><span>Mañana</span></label>
+              <label class="chip"><input type="radio" name="horario" value="Tarde"><span>Tarde</span></label>
+              <label class="chip"><input type="radio" name="horario" value="Cualquiera" checked><span>Cualquiera</span></label>
+            </div>
+          </fieldset>
+
+          <label class="field">
+            <span>Cuéntame un poco más (opcional)</span>
+            <textarea name="mensaje" rows="3" placeholder="Ej: mi ortodoncista me remitió porque..."></textarea>
+          </label>
+
+          <label class="consent">
+            <input type="checkbox" name="autorizo" required>
+            <span>Autorizo el tratamiento de mis datos personales para gestionar mi cita, según la
+              <a href="privacidad.html" target="_blank" rel="noopener">política de privacidad</a> (Ley 1581 de 2012). *</span>
+          </label>
+
+          <p class="form__error" id="formError" role="alert" hidden></p>
+          <p class="form__ok" id="formOk" role="status" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7 12.5l3.2 3.2L17 9"/></svg><span>¡Listo! Se abrió WhatsApp con tus datos. Solo falta que presiones <strong>enviar</strong>.</span></p>
+
+          <button type="submit" class="btn btn--primary btn--block"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/><path d="M9 8.6c0 3.4 2.9 6.4 6.4 6.4l1-1.4-1.9-1-1 .8a5.4 5.4 0 0 1-2.8-2.8l.8-1-1-1.9z"/></svg> Enviar por WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PIE DE PÁGINA ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="index.html" class="brand brand--light">
+          <img src="img/logo-animado.svg" alt="" class="brand__icon" width="54" height="54">
+          <span class="brand__text">
+            <span class="brand__name">María Camila Velasco</span>
+            <span class="brand__sub">Fonoaudióloga Miofuncional</span>
+          </span>
+        </a>
+        <p class="footer__tag">Respirar, tragar, masticar y hablar mejor, a cualquier edad.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Enlaces del pie de página">
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="terapia.html">La terapia</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="formacion.html">Formación</a>
+        <a href="preguntas.html">Preguntas</a>
+        <a href="ubicacion.html">Ubicación</a>
+        <a href="agenda.html">Agendar cita</a>
+      </nav>
+      <div class="footer__contact">
+        <a href="https://wa.me/573155441274" target="_blank" rel="noopener">WhatsApp: 315 544 1274</a>
+        <span>Consultorio 705 Norte · CIE</span>
+        <span>Autopista Floridablanca – Piedecuesta, Km 7</span>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year">2026</span> María Camila Velasco González · Fonoaudióloga Miofuncional</span>
+      <a href="privacidad.html">Política de privacidad</a>
+    </div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
