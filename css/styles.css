@@ -209,6 +209,8 @@ p  { margin: 0 0 1em; }
 .service { background: var(--white); border-radius: var(--radius); padding: 2rem 1.8rem; box-shadow: var(--shadow-sm); transition: transform .25s ease, box-shadow .25s ease; }
 .service:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .service p { color: var(--muted); margin: 0; font-size: .98rem; }
+/* Si la última tarjeta queda sola en su fila, se centra */
+.services > .service:last-child:nth-child(3n+1) { grid-column: 2; }
 
 /* Proceso */
 .steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem; counter-reset: step; position: relative; }
@@ -618,6 +620,8 @@ body { animation: pageIn .5s ease backwards; }
   .about__text { text-align: center; }
   .about__text .checklist { text-align: left; max-width: 30rem; margin-inline: auto; }
   .signals, .services { grid-template-columns: 1fr 1fr; }
+  .services > .service:last-child:nth-child(3n+1) { grid-column: auto; }
+  .services > .service:last-child:nth-child(odd) { grid-column: 1 / -1; justify-self: center; width: calc(50% - .7rem); }
   .steps { grid-template-columns: 1fr 1fr; row-gap: 2.5rem; }
   .steps::before { display: none; }
   .footer__grid { grid-template-columns: 1fr 1fr; }
@@ -632,6 +636,7 @@ body { animation: pageIn .5s ease backwards; }
   .functions { grid-template-columns: 1fr 1fr; }
   .functions .function:last-child { grid-column: 1 / -1; }
   .signals, .services, .form__row { grid-template-columns: 1fr; }
+  .services > .service:last-child:nth-child(odd) { grid-column: auto; width: auto; }
   .hero__badge { font-size: .8rem; padding: .55rem .8rem; }
   .hero__badge--bottom { right: -8%; }
   .hero__badge--bottom strong { font-size: .8rem; }
